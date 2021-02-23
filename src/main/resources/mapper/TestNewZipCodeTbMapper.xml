@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sungryuleom.dao.TestNewZipCodeTbMapper">
+  <resultMap id="BaseResultMap" type="sungryuleom.model.TestNewZipCodeTb">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="NEW_ZIP_CODE_SEQ" jdbcType="INTEGER" property="newZipCodeSeq" />
+    <result column="NEW_ZIP_CODE" jdbcType="VARCHAR" property="newZipCode" />
+    <result column="SI_DO" jdbcType="VARCHAR" property="siDo" />
+    <result column="SI_GUN_GU" jdbcType="VARCHAR" property="siGunGu" />
+    <result column="EUB_MYEON" jdbcType="VARCHAR" property="eubMyeon" />
+    <result column="ROAD_NAME" jdbcType="VARCHAR" property="roadName" />
+    <result column="BUILDING_NUM" jdbcType="VARCHAR" property="buildingNum" />
+    <result column="COURT_DONG_CODE" jdbcType="VARCHAR" property="courtDongCode" />
+    <result column="COURT_DONG_NAME" jdbcType="VARCHAR" property="courtDongName" />
+    <result column="ADMINISTRATIVE_DONG_NAME" jdbcType="VARCHAR" property="administrativeDongName" />
+    <result column="AREA" jdbcType="VARCHAR" property="area" />
+  </resultMap>
+</mapper>

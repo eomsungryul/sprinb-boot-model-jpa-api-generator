@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sungryuleom.dao.UserTbMapper">
+  <resultMap id="BaseResultMap" type="sungryuleom.model.UserTb">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="USER_SEQ" jdbcType="INTEGER" property="userSeq" />
+    <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+    <result column="USER_PWD" jdbcType="VARCHAR" property="userPwd" />
+    <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+    <result column="DEPARTMENT" jdbcType="VARCHAR" property="department" />
+    <result column="CUSTOMER_SEQ" jdbcType="INTEGER" property="customerSeq" />
+    <result column="MAIN_YN" jdbcType="INTEGER" property="mainYn" />
+    <result column="LEVEL" jdbcType="VARCHAR" property="level" />
+    <result column="USE_YN" jdbcType="INTEGER" property="useYn" />
+    <result column="REG_DATE" jdbcType="DATE" property="regDate" />
+    <result column="WRITER" jdbcType="INTEGER" property="writer" />
+    <result column="USER_HP" jdbcType="VARCHAR" property="userHp" />
+    <result column="USER_DEVICE" jdbcType="VARCHAR" property="userDevice" />
+    <result column="ACCESS_TOKEN" jdbcType="VARCHAR" property="accessToken" />
+    <result column="TOKEN_REG_DATE" jdbcType="TIMESTAMP" property="tokenRegDate" />
+  </resultMap>
+</mapper>
