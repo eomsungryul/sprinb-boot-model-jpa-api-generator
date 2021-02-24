@@ -159,7 +159,8 @@ public class MapperCommentGenerator implements CommentGenerator {
             //@Column
             if(!introspectedColumn.isNullable()){
                 if("String".equals(introspectedColumn.getFullyQualifiedJavaType().getShortName())){
-                    field.addAnnotation("@Column(name = \"" + getDelimiterName(column) + "\", nullable= false)");
+                    field.addAnnotation("@Column(name = \""
+                            + getDelimiterName(column) + "\", nullable= false, length="+introspectedColumn.getLength()+")");
                 }else{
                     field.addAnnotation("@Column(name = \"" + getDelimiterName(column) + "\", nullable= false)");
                 }
@@ -174,6 +175,8 @@ public class MapperCommentGenerator implements CommentGenerator {
                 field.addAnnotation("@Column(name = \"" + getDelimiterName(column) + "\")");
             }
         }
+
+
         if (introspectedColumn.isIdentity()) {
             if (introspectedTable.getTableConfiguration().getGeneratedKey().getRuntimeSqlStatement().equals("JDBC")) {
                 field.addAnnotation("@GeneratedValue(generator = \"JDBC\")");
